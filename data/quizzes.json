@@ -1,0 +1,99 @@
+[
+  {
+    "id": "1",
+    "title": "Swimming🏊‍♂️",
+    "questions": [
+      {
+        "id": "1",
+        "question": "Which stroke is typically the fastest in competitive swimming?",
+        "options": [
+          "A) Breaststroke",
+          "B) Backstroke",
+          "C) Freestyle",
+          "D) Butterfly"
+        ],
+        "answer": "C) Freestyle"
+      },
+      {
+        "id": "2",
+        "question": "What is the term for the style of swimming where the swimmer lies on their back?",
+        "options": [
+          "A) Freestyle",
+          "B) Butterfly",
+          "C) Backstroke",
+          "D) Sidestroke"
+        ],
+        "answer": "C) Backstroke"
+      },
+      {
+        "id": "3",
+        "question": "What is the distance of an Olympic swimming pool?",
+        "options": [
+          "A) 25 meters",
+          "B) 50 meters",
+          "C) 100 meters",
+          "D) 75 meters"
+        ],
+        "answer": "B) 50 meters"
+      }
+    ]
+  },
+  {
+    "id": "2",
+    "title": "Tennis🎾",
+    "questions": [
+      {
+        "id": "1",
+        "question": "What is the term for a serve that the opponent cannot return?",
+        "options": ["A) Fault", "B) Ace", "C) Deuce", "D) Break"],
+        "answer": "B) Ace"
+      },
+      {
+        "id": "2",
+        "question": "Which of the following surfaces is considered the fastest for playing tennis?",
+        "options": ["A) Grass", "B) Clay", "C) Hard court", "D) Carpet"],
+        "answer": "A) Grass"
+      },
+      {
+        "id": "3",
+        "question": "In tennis, how many sets must a player typically win to win a match in a Grand Slam tournament?",
+        "options": ["A) 2", "B) 3", "C) 4", "D) 5"],
+        "answer": "B) 3"
+      }
+    ]
+  },
+  {
+    "id": "3",
+    "title": "Snowboarding🏂",
+    "questions": [
+      {
+        "id": "1",
+        "question": "What is the term for a maneuver where the snowboarder rotates 180 degrees while in the air?",
+        "options": ["A) Backflip", "B) Frontside", "C) 180", "D) Ollie"],
+        "answer": "C) 180"
+      },
+      {
+        "id": "2",
+        "question": "What does it mean to carve while snowboarding?",
+        "options": [
+          "A) Making sharp turns while maintaining speed",
+          "B) Jumping off a jump or rail",
+          "C) Riding with both feet parallel",
+          "D) Riding only on flat surfaces"
+        ],
+        "answer": "A) Making sharp turns while maintaining speed"
+      },
+      {
+        "id": "3",
+        "question": "What is freestyle snowboarding primarily focused on?",
+        "options": [
+          "A) Racing down the mountain",
+          "B) Performing tricks and jumps in terrain parks",
+          "C) Riding on flat terrain",
+          "D) Navigating through backcountry trails"
+        ],
+        "answer": "B) Performing tricks and jumps in terrain parks"
+      }
+    ]
+  }
+]
