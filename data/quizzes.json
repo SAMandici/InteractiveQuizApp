@@ -12,7 +12,8 @@
           "C) Freestyle",
           "D) Butterfly"
         ],
-        "answer": "C) Freestyle"
+        "correctAnswer": "C) Freestyle",
+        "submitted": false
       },
       {
         "id": "2",
@@ -23,7 +24,8 @@
           "C) Backstroke",
           "D) Sidestroke"
         ],
-        "answer": "C) Backstroke"
+        "correctAnswer": "C) Backstroke",
+        "submitted": false
       },
       {
         "id": "3",
@@ -34,7 +36,8 @@
           "C) 100 meters",
           "D) 75 meters"
         ],
-        "answer": "B) 50 meters"
+        "correctAnswer": "B) 50 meters",
+        "submitted": false
       }
     ]
   },
@@ -46,19 +49,22 @@
         "id": "1",
         "question": "What is the term for a serve that the opponent cannot return?",
         "options": ["A) Fault", "B) Ace", "C) Deuce", "D) Break"],
-        "answer": "B) Ace"
+        "correctAnswer": "B) Ace",
+        "submitted": false
       },
       {
         "id": "2",
         "question": "Which of the following surfaces is considered the fastest for playing tennis?",
         "options": ["A) Grass", "B) Clay", "C) Hard court", "D) Carpet"],
-        "answer": "A) Grass"
+        "correctAnswer": "A) Grass",
+        "submitted": false
       },
       {
         "id": "3",
         "question": "In tennis, how many sets must a player typically win to win a match in a Grand Slam tournament?",
         "options": ["A) 2", "B) 3", "C) 4", "D) 5"],
-        "answer": "B) 3"
+        "correctAnswer": "B) 3",
+        "submitted": false
       }
     ]
   },
@@ -70,7 +76,8 @@
         "id": "1",
         "question": "What is the term for a maneuver where the snowboarder rotates 180 degrees while in the air?",
         "options": ["A) Backflip", "B) Frontside", "C) 180", "D) Ollie"],
-        "answer": "C) 180"
+        "correctAnswer": "C) 180",
+        "submitted": false
       },
       {
         "id": "2",
@@ -81,7 +88,8 @@
           "C) Riding with both feet parallel",
           "D) Riding only on flat surfaces"
         ],
-        "answer": "A) Making sharp turns while maintaining speed"
+        "correctAnswer": "A) Making sharp turns while maintaining speed",
+        "submitted": false
       },
       {
         "id": "3",
@@ -92,7 +100,8 @@
           "C) Riding on flat terrain",
           "D) Navigating through backcountry trails"
         ],
-        "answer": "B) Performing tricks and jumps in terrain parks"
+        "correctAnswer": "B) Performing tricks and jumps in terrain parks",
+        "submitted": false
       }
     ]
   }

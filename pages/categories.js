@@ -3,7 +3,7 @@ import Link from "next/link";
 import quizzesData from "../data/quizzes.json";
 
 const Categories = () => {
-  const categories = quizzesData; // Directly use the quizzes-data
+  const categories = quizzesData; // Directly use the quizzes data
 
   return (
     <div>
