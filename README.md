@@ -1,37 +1,61 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`]
+
+# Interactive Quiz App 
+
+This is an interactive quiz project build with **Next.js** and **React** technologies; also using **hooks**, **api** and **localStorage**.
+In each module we advanced a little bit to get to a modern UI application. 
+For the final version of the app each user should be able to answer question and add new question directly through the app.
+Since the project lacks a real back-end, questions are saved and updated using `localStorage` to simulate writing data to a file.
+
+## Project Description 
+
+This aplication allows users to:
+- Navigate through categories with each quiz for each category.
+- Check the results on the last page and posibility to add new question.
+- Save and manage questions directly in `localStorage`.
+
+Pages of the app:
+1. *Home* --> Introduction to the app(what the quizes are about/rules) and a warm welcome.
+2. *Categories* --> Page for selecting a category.
+3. *Question1/2/3/4* --> Page for each qustion in the quiz
+4. *Results* --> Page too see the results and to add new question. 
 
 ## Getting Started
 
-First, run the development server:
+1. **First clone the repository**:
+   ```bash
+   git clone https://github.com/username/InteractiveQuizApp.git
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+2. **Navigate to folder**
+   ```bash
+   cd InteractiveQuizApp
+
+3. **Install dependencies**
+   ```bash
+   npm install
+   
+4. **Run the application**
+    ```bash
+    npm run dev
+    # or
+    yarn dev
+    # or
+    pnpm dev
+    # or
+    bun dev  
+    ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+**Contributions**
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+Contributions are welcome! Follow these steps to contribute:
+  - Fork the repository and create a branch for your modifications.
+  - Once you've made your changes, submit a Pull Request.
+  - Clearly describe the functionality or improvements you've added in the PR.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
 ## Deploy on Vercel
 

@@ -1,17 +1,51 @@
+// pages/quiz/[quizId]/question/[questionId].js
 import { useRouter } from "next/router";
-import { useState } from "react";
-import quizzesData from "../../../../data/quizzes.json";
+import { useEffect, useState } from "react";
 
-const Question = ({ quiz, question }) => {
+const Question = () => {
   const router = useRouter();
+  const { quizId, questionId } = router.query; // Get quizId and questionId from the URL
+  const [quiz, setQuiz] = useState(null);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
   const [selectedOption, setSelectedOption] = useState(null);
   const [feedback, setFeedback] = useState("");
   const [score, setScore] = useState(0);
-  const [submitted, setSubmitted] = useState(false); // Track submission status
+  const [submitted, setSubmitted] = useState(false);
 
-  if (!question) {
-    return <p>Missing question</p>;
-  }
+  // Fetch quiz data
+  useEffect(() => {
+    const fetchQuizData = async () => {
+      try {
+        const response = await fetch("/api/quizzes");
+        if (!response.ok) {
+          throw new Error("Network response was not ok");
+        }
+        const quizzesData = await response.json();
+        const foundQuiz = quizzesData.find((q) => q.id === quizId);
+        setQuiz(foundQuiz);
+      } catch (err) {
+        setError(err); // Set error if fetching fails
+      } finally {
+        setLoading(false); // Indicate that loading has finished
+      }
+    };
+
+    if (quizId) {
+      fetchQuizData();
+    }
+  }, [quizId]);
+
+  // Display loading or error messages
+  if (loading) return <p>Loading...</p>;
+  if (error) return <p>Error: {error.message}</p>;
+  if (!quiz) return <p>Quiz not found.</p>;
+
+  const question = quiz.questions.find((q) => q.id === questionId);
+
+  // Check if this is the last question
+  const isLastQuestion =
+    question && parseInt(question.id) === quiz.questions.length;
 
   const handleOptionChange = (option) => {
     setSelectedOption(option);
@@ -43,8 +77,6 @@ const Question = ({ quiz, question }) => {
     }
   };
 
-  const isLastQuestion = parseInt(question.id) === quiz.questions.length;
-
   return (
     <div>
       <h1>Question {question.id}</h1>
@@ -75,21 +107,5 @@ const Question = ({ quiz, question }) => {
     </div>
   );
 };
-
-// Fetching data for the page
-export async function getServerSideProps(context) {
-  const { quizId, questionId } = context.params;
-
-  const quiz = quizzesData.find((q) => q.id === quizId);
-  const question = quiz?.questions.find((q) => q.id === questionId);
-
-  // Pass data to the page via props
-  return {
-    props: {
-      quiz: quiz || null, // Pass null if the quiz isn't found
-      question: question || null, // Pass null if the question isn't found
-    },
-  };
-}
 
 export default Question;
