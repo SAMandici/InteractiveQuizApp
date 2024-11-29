@@ -40,3 +40,42 @@ a {
     color-scheme: dark;
   }
 }
+
+/* styles/globals.css or a specific CSS module */
+h1 {
+  color: #89b2e1;
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px 15px;
+  background-color: #89b2e1;
+  color: rgb(8, 8, 8);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #89b2e1;
+}
+
+.button-group {
+  display: flex;
+  flex-direction: column;
+}
+.option-button {
+  margin: 5px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+  cursor: pointer;
+}
+.option-button.selected {
+  background-color: #89b2e1; /* Green */
+  color: #db6f0a;
+}
+.option-button:disabled {
+  background-color: #e0e0e0; /* Light gray */
+  cursor: not-allowed;
+}
